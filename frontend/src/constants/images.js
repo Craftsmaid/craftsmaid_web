@@ -1,7 +1,6 @@
+import Logo from './../assets/logo.png'
 
 
-const images = () => ({
-    image1: "test"
-})
-
-export default images;
+export default {
+    Logo
+};

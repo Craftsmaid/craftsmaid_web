@@ -26,8 +26,9 @@ module.exports = {
         secondaryBgColor: "#FCDEAF",
         redColor: "#9D0C10",
         goldColor: "#CC9A2F",
-        greyColor: "#6b7688"
-      }
+        greyColor: "#6b7688",
+        bgGold: "rgba(204, 154, 47, 0.5)"
+      },
     },
   },
   plugins: [],

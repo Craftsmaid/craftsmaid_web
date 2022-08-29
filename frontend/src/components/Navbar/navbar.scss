@@ -1,0 +1,25 @@
+.app__navbar {
+      height: 10vh;
+      width: 100%;
+  
+      .app__navbar-logo {
+  
+          width: 30vw;
+  
+          img {
+              width: 120px;
+          }
+      }
+  
+      .app__navbar-link {
+          transition: all 0.4s ease-in-out;
+  
+          &:hover {
+              color: var(--white-color);  
+              background-color: rgba(204, 154, 47, 0.7);
+              box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+              -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          }
+      }
+  
+  }
