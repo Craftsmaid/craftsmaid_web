@@ -1,13 +1,17 @@
 const nodemailer = require("nodemailer");
 const smtpTransport = require("nodemailer-smtp-transport");
+const { config } = require('dotenv');
 
+config();
+
+const { MAILGUN_USER, MAILGUN_PASS } = process.env
 const transport = nodemailer.createTransport(
     smtpTransport({
         host: "smtp.mailgun.org",
         port: 587,
         auth: {
-            user: "postmaster@mail.trails247.com",
-            pass: "96c84cc91464a2ca87be551e4f5e5134-162d1f80-6ed9a45f",
+            user: MAILGUN_USER,
+            pass: MAILGUN_PASS,
         },
     })
 );
